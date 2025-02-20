@@ -244,8 +244,7 @@ impl DeepinfraClient {
     /// ```
     /// let request = ChatCompletionRequestBuilder::default()
     ///     // Build your messages, model, temperature, etc.
-    ///     .build()
-    ///     .expect("Failed to build request");
+    ///     .build();
     ///
     /// let response = client.chat_completition(request).await?;
     /// println!("Received chat response: {:?}", response);

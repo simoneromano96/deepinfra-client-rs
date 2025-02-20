@@ -17,6 +17,11 @@ exclude = [
 ]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[features]
+default = ["chat_completition", "audio_transcription"]
+chat_completition = []
+audio_transcription = []
+
 [dependencies]
 bon = "3"
 http = "1"
